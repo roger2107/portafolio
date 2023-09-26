@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.oculto{
+    display: none;
+}
+
+.tab-selected{
+    background-color: darken(v.$azul, 20);
+    color: v.$gris;
+}

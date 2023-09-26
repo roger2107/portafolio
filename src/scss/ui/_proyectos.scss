@@ -1,0 +1,84 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-proyectos{
+    padding-bottom: 5rem;
+
+    //-----------------> Animacion <----------------
+    opacity: 0;
+    transform: scale(0.5);
+    transition: .7s ease-in-out all;
+    //----------------------------------------------
+}
+
+.visible-hero{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.proyectos-titulo{
+    color: v.$blanco;
+    font-size: 6rem;
+    padding-top: 4rem;
+    padding-left: 10rem;
+}
+
+.contenedor-tabs{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.tab{
+    background-color: v.$azul;
+    color: v.$blanco;
+    font-weight: bold;
+    padding: 2rem 1.5rem .5rem 1.5rem;
+    border: solid 2px v.$f_grisclaro;
+    border-top-right-radius: 15px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: darken(v.$azul, 20);
+    }
+}
+
+.proyectos-lista{
+    width: 80%;
+    margin: 0 auto;
+    background-color: v.$f_grisoscuro;
+    //border: solid 1px white;
+}
+
+.proyecto{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 2px v.$gris;
+    padding-bottom: 3rem;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.proyecto-imagen{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.proyecto-titulo{
+    font-size: 3rem;
+    color: v.$blanco;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-parrafo{
+    color: v.$blanco;
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding-bottom: 2rem;
+}
+

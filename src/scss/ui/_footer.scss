@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    padding: 2rem 10rem;
+    @include m.desktop{
+        padding: 10rem 10rem 2rem 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.datos-personales--redes__footer{
+    width: 30%;
+    margin: 0 auto;
+    @include m.desktop{
+        width: 20%;
+    }
+}
+
+.parrafo-footer{
+    text-align: center;
+    color: v.$blanco;
+    font-size: 1.8rem;
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.navegacion__lista__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2.5rem;
+    
+    @include m.desktop{
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .navegacion__enlace{
+        font-size: 2rem;
+    }
+    padding-bottom: 2rem;
+}

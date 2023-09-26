@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.proyecto-tecnologias{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tecnologia{
+    margin-right: 1rem;
+    background-color: gray;
+    color: v.$blanco;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.html{
+    background-color: v.$c_html;
+}
+.css{
+    background-color: v.$c_css;
+}
+.javascript{
+    background-color: v.$c_javascript;
+}
+.php{
+    background-color: v.$c_php;
+}
+.mysql{
+    background-color: v.$c_mysql;
+}
+.git{
+    background-color: v.$c_git;
+}
+.wordpress{
+    background-color: v.$c_wordpress;
+}
+.ionos{
+    background-color: v.$c_ionos;
+} 

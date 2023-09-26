@@ -1,0 +1,119 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-skills{
+    background-color: v.$f_grisoscuro;
+    
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    //-----------------> Animacion <----------------
+    opacity: 0;
+    transform: scale(0.5);
+    transition: .7s ease-in-out all;
+    //----------------------------------------------
+}
+
+.visible-hero{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.skills-titulo{
+    color: v.$blanco;
+    font-size: 6rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
+}
+
+.contenedor-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+
+    @include m.tablet{
+        flex-direction: row;
+    }
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: v.$f_grisclaro;
+    padding: 1rem 2rem;
+}
+
+.skill-img{
+    width: 5rem;
+}
+
+.skill-nombre{
+    font-size: 2.4rem;
+    color: v.$blanco;
+    font-weight: 500;
+
+    padding-left: 1rem;
+}
+
+.contenedor-tencologias{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.tecnologias-parrafo{
+    color: v.$blanco;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tecnologias{
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    @include m.tablet{
+        width: 80%;
+    }
+
+}
+
+.tecnologia-img{
+    width: 5rem;
+    @include m.tablet{
+        width: 8rem;
+    }
+}
+
+/*
+
+.contenedor-skills{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+
+    @include m.grid(2, 1rem);
+    @include m.desktop{
+        @include m.grid(3, 2rem);
+    }
+}
+
+.skills-img{
+    width: 18rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    @include m.desktop{
+        width: 25rem;
+        margin: 0 auto;
+    }
+}
+*/

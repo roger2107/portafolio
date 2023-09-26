@@ -1,0 +1,107 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main-hero{
+    height: 100vh;
+    background-color: v.$f_grisclaro;
+    background-image: url('../img/foto_me.png');
+    background-repeat: no-repeat;
+    background-size: 50rem;
+    background-position: bottom;
+    @include m.tablet{
+        background-size: 60rem;
+    }
+    
+    //-----------------> Animacion <----------------
+    opacity: 0;
+    transform: scale(0.5);
+    transition: .7s ease-in-out all;
+    //----------------------------------------------
+    @include m.desktop{
+        @include m.grid(2, 10rem);
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+
+.visible-hero{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.datos-personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //border: solid 1px white;
+}
+
+.datos-personales--nombre{
+    color: v.$blanco;
+    font-size: 8rem;
+    margin: 0;
+}
+
+.apellido{
+    &:after{
+        background-color: v.$azul;
+        content: "";
+        display: block;
+        height: 1rem;
+        margin-top: 1rem;
+        width: 10rem;
+    }
+}
+
+.resumen{
+    // border: solid 1px white;
+    color: v.$blanco;
+    padding-left: 10rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.resumen--titulo{
+    margin: 0;
+    color: v.$blanco;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+.resumen--cargo{
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.resumen--parrafo{
+    color: v.$blanco;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 2.2rem;
+    @include m.tablet{
+        font-size: 1.8rem;
+    }
+}
+
+.datos-personales--redes{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}       
+
+.redes-icono{
+    width: 3rem;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="shortcut icon" href="build/img/favicon.png" type="image/x-icon">
+    <title>Rogelio Olivera - Front End Dev & Web Designer</title>
+</head>
+<body>
+    <header class="header">
+        <img src="build/img/logo_me.png"   alt="logo" class="logo">
+        <nav class="navegacion">
+            <img src="build/img/icono-menu.png" alt="menu mobil" class="boton-menu-hamburguesa">
+            <div class="navegacion-mobil">
+                <ul class="navegacion__lista">
+                    <li class="navegacion__enlace"><a class="enlace" href="#">Inicio</a></li>
+                    <!-- <li class="navegacion__enlace">Sobre Mi</li> -->
+                    <li class="navegacion__enlace"><a class="enlace" href="#seccion-skills">Skills</a></li>
+                    <li class="navegacion__enlace"><a class="enlace" href="#seccion-proyectos">Proyectos</a></li>
+                    <li class="navegacion__enlace"><a class="enlace" href="#seccion-contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-hero">
+        <!-- <div class="hero-imagen"></div> -->
+        <div class="datos-personales">
+            <h1 class="datos-personales--nombre">Rogelio</h1>
+            <h1 class="datos-personales--nombre apellido">Olivera</h1>
+            <div class="datos-personales--redes">
+                <a href="https://www.linkedin.com/in/roger-olivera/" target="_blank"><img class="redes-icono" src="build/img/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/roger2107" target="_blank"><img class="redes-icono" src="build/img/github.png" alt="github"></a>
+                <a href="https://twitter.com/rogeroDev" target="_blank"><img class="redes-icono" src="build/img/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+        <div class="resumen">
+            <p class="resumen--titulo">- Introduccion</p>
+            <h3 class="resumen--cargo">Desarrollador Front End & Diseñador Web</h3>
+            <p class="resumen--parrafo">Desarrollador Web, enfocado en el Front End y el Diseño Web, combinando mi pasión por la tecnología y la creatividad para crear experiencias digitales memorables.</p>
+        </div>
+    </main>
+    <!-- <section class="seccion-sobre-mi">
+        <h2>sobre mi</h2>
+    </section> -->
+    <section class="seccion-skills" id="seccion-skills">
+        <h2 class="skills-titulo">Skills</h2>
+        <div class="contenedor-skills">
+            <div class="skill">
+                <img src="build/img/web-development.png" alt="desarrollo web" class="skill-img">
+                <p class="skill-nombre">Desarrollo Web</p>
+            </div>
+            <div class="skill">
+                <img src="build/img/web-design.png" alt="diseño web" class="skill-img">
+                <p class="skill-nombre">Diseño Web</p>
+            </div>
+            <div class="skill">
+                <img src="build/img/graphic-design.png" alt="diseño grafico" class="skill-img">
+                <p class="skill-nombre">Diseño Gráfico</p>
+            </div>
+        </div>
+        <div class="contenedor-tencologias">
+            <p class="tecnologias-parrafo">Tecnologías/Herramientas</p>
+            <div class="tecnologias">
+                <img class="tecnologia-img" src="build/img/html.png" alt="html">
+                <img class="tecnologia-img" src="build/img/css.png" alt="css">
+                <img class="tecnologia-img" src="build/img/javascript.png" alt="javascript">
+                <img class="tecnologia-img" src="build/img/php.png" alt="php">
+                <img class="tecnologia-img" src="build/img/git.png" alt="git">
+                <img class="tecnologia-img" src="build/img/mysql.png" alt="mysql">
+            </div>
+            <div class="tecnologias">
+                <img class="tecnologia-img" src="build/img/wordpress.png" alt="html">
+                <img class="tecnologia-img" src="build/img/corel.png" alt="css">
+                <img class="tecnologia-img" src="build/img/photoshop.png" alt="javascript">
+            </div>
+        </div>
+        <!-- <div class="contenedor-skills">
+            
+        </div> -->
+    </section>
+    <section class="seccion-proyectos" id="seccion-proyectos">
+        <h2 class="proyectos-titulo">Proyectos</h2>
+
+        <div class="proyectos-tabs">
+            <div class="contenedor-tabs">
+                <p id="tab-webdev" class="tab tab-selected">Desarrollo Web</p>
+                <p id="tab-webdes" class="tab">Diseño Web</p>
+                <p id="tab-otro" class="tab">Diseño Gráfico</p>
+            </div>
+            <div class="proyectos-lista">
+                <!-- PROYECTOS DE DESARROLLO WEB -->
+                <div class="proyectos-descripcion" id="proyectos-webdev">
+                    <div class="proyecto"> <!---POKEDEX-->
+                        <h4 class="proyecto-titulo">Pokedex</h4>
+                        <img src="build/img/pokedex.png" alt="proyecto pokedex" class="proyecto-imagen">
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia html">HTML</span>
+                            <span class="tecnologia css">CSS</span>
+                            <span class="tecnologia javascript">JAVASCRIPT</span>
+                        </div>
+                        <p class="proyecto-parrafo">
+                            En este proyecto se consume la API de Pokémon, usando fetch de Javascript para realizar las
+                            solicitudes al servidor, y presentar la información mediante HTML, dándole estilos con CSS. 
+                            Pudiendo consultar los pokémon de alguna región es especifico y obtener su descripción y stats
+                            base mediante una card modal. 
+                        </p>
+                        <a href="https://pokedex-rogerodev.netlify.app/" target="_blank" class="boton">Ver Proyecto</a>
+                    </div>
+                    <div class="proyecto"> <!---POKEMEMORIA-->
+                        <h4 class="proyecto-titulo">Memorama Pokemon</h4>
+                        <img src="build/img/pokememoria.png" alt="proyecto memorama pokmeon" class="proyecto-imagen">
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia html">HTML</span>
+                            <span class="tecnologia css">CSS</span>
+                            <span class="tecnologia javascript">JAVASCRIPT</span>
+                        </div>
+                        <p class="proyecto-parrafo">
+                            Éste es el clásico juego memorama usando los sprites de Pokemon obtenidos desde la pokeapi con Javascript,
+                            también se usó JS para la lógica del juego, HTML y CSS para dar estilo a los elementos del juego.
+                        </p>
+                        <a href="https://pokememorama-rogerodev.netlify.app/" target="_blank" class="boton">Ver Proyecto</a>
+                    </div>
+                </div>
+                <!-- PROYECTOS DE DISEÑO WEB -->
+                <div class="proyectos-descripcion oculto" id="proyectos-webdes">
+                    <div class="proyecto"> <!-- GR CORPORATIVO -->
+                        <h4 class="proyecto-titulo">Web GR Corporativo</h4>
+                        <img src="build/img/grcorporativo.png" alt="proyecto gr Corporativo" class="proyecto-imagen">
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia wordpress">WordPress</span>
+                        </div>
+                        <p class="proyecto-parrafo">
+                            Sitio web para la empresa GR Corporativo dedicada a la comercialización de diversos insumos especializada en el sector gubernamental. 
+                        </p>
+                        <a href="https://grcorporativo.com.mx/" target="_blank" class="boton">Ver Proyecto</a>
+                    </div>
+                    <div class="proyecto"> <!-- DIMPAOF -->
+                        <h4 class="proyecto-titulo">DIMPAOF</h4>
+                        <img src="build/img/dimpaof.png" alt="proyecto otro" class="proyecto-imagen">
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia ionos">IONOS</span>
+                        </div>
+                        <p class="proyecto-parrafo">
+                            Sitio web para una empresa oaxaqueña, distribuidora mayorista y minorista de articulos de papelería y oficina e insumos de cómputo.
+                        </p>
+                        <a href="https://www.dimpaof.com/" target="_blank" class="boton">Ver Proyecto</a>
+                    </div>
+                </div>
+                <!-- PROYECTOS DE DISEÑO GRÁFICO-->
+                <div class="proyectos-descripcion oculto" id="proyectos-otro">
+                    <div class="proyecto"> <!-- Presentaciones -->
+                        <h4 class="proyecto-titulo">Presentaciones Corporativas</h4>
+                        <img src="build/img/presentaciones.png" alt="proyecto otro" class="proyecto-imagen">
+                        <!-- <div class="proyecto-tecnologias">
+                            <span class="tecnologia ionos">IONOS</span>
+                        </div> -->
+                        <p class="proyecto-parrafo">
+                            Diseño de presentaciones corporativas para informes, reportes, etc.
+                        </p>
+                        <!-- <a href="https://www.dimpaof.com/" target="_blank" class="boton">Ver Proyecto</a> -->
+                    </div>
+                    <div class="proyecto"> <!-- Social Media -->
+                        <h4 class="proyecto-titulo">Contenido para Redes Sociales</h4>
+                        <img src="build/img/social-media.png" alt="proyecto otro" class="proyecto-imagen">
+                        <!-- <div class="proyecto-tecnologias">
+                            <span class="tecnologia ionos">IONOS</span>
+                        </div> -->
+                        <p class="proyecto-parrafo">
+                            Diseño de post, infografías e imágenes de perfil y portada para redes sociales.
+                        </p>
+                        <!-- <a href="https://www.dimpaof.com/" target="_blank" class="boton">Ver Proyecto</a> -->
+                    </div>
+                    <div class="proyecto"> <!-- Catálogos -->
+                        <h4 class="proyecto-titulo">Catálogos de Productos</h4>
+                        <img src="build/img/catalogos.png" alt="proyecto otro" class="proyecto-imagen">
+                        <!-- <div class="proyecto-tecnologias">
+                            <span class="tecnologia ionos">IONOS</span>
+                        </div> -->
+                        <p class="proyecto-parrafo">
+                            Diseño de catálogos de productos para diversos giros.
+                        </p>
+                        <!-- <a href="https://www.dimpaof.com/" target="_blank" class="boton">Ver Proyecto</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seccion-contacto" id="seccion-contacto">
+        <h2 class="contacto-titulo">Contacto</h2>
+        <div class="seccion-contacto-contenedor">
+            <div class="contacto-texto">
+                <h4 class="contacto-subtitulo">¡Trabajemos juntos!</h4>
+                <p class="contacto-parrafo">Cuéntame sobre tu proyecto y hagámoslo realidad.</p>
+                <div class="datos-personales--redes datos-personales--redes__contacto">
+                    <a  href="https://www.linkedin.com/in/roger-olivera/" target="_blank"><img class="redes-icono" src="build/img/linkedin.png" alt="linkedin"></a>
+                    <a  href="https://github.com/roger2107" target="_blank"><img class="redes-icono" src="build/img/github.png" alt="github"></a>
+                    <a  href="https://twitter.com/rogeroDev" target="_blank"><img class="redes-icono" src="build/img/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+            <div class="contacto-formulario">
+                <form action="correo.php" method="POST" class="formulario">
+                    <fieldset>
+                        <legend>Cuéntame sobre tu proyecto</legend>
+                        <div class="field-contenedor">
+                            <label class="field-label" for="nombre">¿Cuál es tu nombre?</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="field-contenedor">
+                            <label class="field-label" for="email">E-Mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="field-contenedor">
+                            <label class="field-label" for="telefono">Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" required>
+                        </div>
+                        <div class="field-contenedor">
+                            <label class="field-label" for="textarea-mensaje">Mensaje</label>
+                            <textarea required name="textarea-mensaje" id="textarea-mensaje"></textarea>
+                        </div>
+                        <input class="boton" type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <ul class="navegacion__lista navegacion__lista__footer">
+            <li class="navegacion__enlace"><a class="enlace" href="#">Inicio</a></li>
+            <li class="navegacion__enlace"><a class="enlace" href="#seccion-skills">Skills</a></li>
+            <li class="navegacion__enlace"><a class="enlace" href="#seccion-proyectos">Proyectos</a></li>
+            <li class="navegacion__enlace"><a class="enlace" href="#seccion-contacto">Contacto</a></li>
+        </ul>
+        <p class="parrafo-footer">Creado por: Rogelio Olivera</p>
+        <div class="datos-personales--redes datos-personales--redes__footer">
+            <a href="https://www.linkedin.com/in/roger-olivera/" target="_blank"><img class="redes-icono" src="build/img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/roger2107" target="_blank"><img class="redes-icono" src="build/img/github.png" alt="github"></a>
+            <a href="https://twitter.com/rogeroDev" target="_blank"><img class="redes-icono" src="build/img/twitter.png" alt="twitter"></a>
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    border: solid 2px v.$blanco;
+    background-color: v.$f_grisoscuro;
+    color: v.$blanco;
+    padding: 1.5rem 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+    //border-radius: 1rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: v.$blanco;
+        border: solid 2px v.$f_grisoscuro;;
+        color: v.$f_grisoscuro;
+    }
+}
