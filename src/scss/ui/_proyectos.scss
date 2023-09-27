@@ -20,7 +20,10 @@
     color: v.$blanco;
     font-size: 6rem;
     padding-top: 4rem;
-    padding-left: 10rem;
+    padding-left: 8rem;
+    @include m.tablet{
+        padding-left: 10rem;
+    }
 }
 
 .contenedor-tabs{
@@ -33,6 +36,10 @@
     background-color: v.$azul;
     color: v.$blanco;
     font-weight: bold;
+    font-size: 1.6rem;
+    @include m.tablet{
+        font-size: 2rem;
+    }
     padding: 2rem 1.5rem .5rem 1.5rem;
     border: solid 2px v.$f_grisclaro;
     border-top-right-radius: 15px;
@@ -48,6 +55,9 @@
     margin: 0 auto;
     background-color: v.$f_grisoscuro;
     //border: solid 1px white;
+}
+.proyectos-descripcion{
+    width: 100%;
 }
 
 .proyecto{

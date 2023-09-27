@@ -3,7 +3,10 @@
 
 .seccion-contacto{
     background-color: v.$f_grisoscuro;
-    padding: 5rem 10rem ;
+    padding: 5rem 4rem ;
+    @include m.tablet{
+        padding: 5rem 10rem ;
+    }
 
     //-----------------> Animacion <----------------
     opacity: 0;
